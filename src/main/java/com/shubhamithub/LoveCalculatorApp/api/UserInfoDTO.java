@@ -5,6 +5,8 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class UserInfoDTO {
 
 	@NotBlank(message = " * Your name cant be blank")
@@ -18,6 +20,7 @@ public class UserInfoDTO {
 	
 	@AssertTrue(message = "agree to use our app")
 	private boolean termAndCondition;
+	
 
 	public String getYourName() {
 		return yourName;
@@ -47,5 +50,7 @@ public class UserInfoDTO {
 	public void setTermAndCondition(boolean termAndCondition) {
 		this.termAndCondition = termAndCondition;
 	}
+
+	
 
 }

@@ -14,7 +14,11 @@
 	<br /> Password: ${userReg.password}
 	<br /> Country: ${userReg.countryName}
 	<br /> Hobbies: ${userReg.hobbies}
-	<br /> Gender: ${user.Reg.gender}
+	<br /> Gender: ${userReg.gender}
+	<br /> Email: ${userReg.dto.email}
+	<br /> Phone: ${userReg.dto.phone}
+	<br /> Age : ${userReg.age}
+	
 
 </body>
 </html>

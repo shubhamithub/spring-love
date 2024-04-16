@@ -10,7 +10,8 @@
 <body>
 	<h1 align="center">Please Register Here</h1>
 
-	<form:form action="registration-success" method="GET" modelAttribute="userReg">
+	<form:form action="registration-success" method="GET"
+		modelAttribute="userReg">
 		<div align="center">
 			<label>User : </label>
 			<form:input path="name" />
@@ -42,7 +43,23 @@
 			<form:radiobutton path="gender" value="male" />
 			Female :
 			<form:radiobutton path="gender" value="female" />
-			<br /> <input type="submit" value="register">
+			<br />
+			
+			<label>Age : </label>
+		    <form:input path="age"/>
+		</div>
+
+		<div align="center">
+			<h1>Communication</h1>
+			<label>Email</label>
+			<form:input path="dto.email" />
+			
+			<label>Phone</label>
+			<form:input path="dto.phone" />
+		</div>
+
+		<div align="center">
+			<input type="submit" value="register">
 		</div>
 	</form:form>
 </body>
